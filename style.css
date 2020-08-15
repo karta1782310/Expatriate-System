@@ -1,0 +1,170 @@
+ul.pagination
+{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a 
+{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination li:first-child a 
+{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a 
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul.pagination li a.active 
+{
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+#tab
+{
+    width: 100%;
+    background: #728ca3;
+    border: solid 0px #8f4f06;
+}
+/* 頁籤ul */
+#tab > ul
+{
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 20px 0 20px;
+}
+#tab > ul > li
+{
+    list-style-type: none;
+}
+#tab > ul > li > a
+{
+    text-decoration: none;
+    font-size: 22px;
+    color: #e6eff3;
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+    
+#tab > div
+{
+    clear:both;
+    padding:0 15px;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -ms-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+}
+    
+#tab-1:target,
+#tab-2:target,
+#tab-3:target,
+#tab-4:target
+{
+    border: solid 0px red;
+}
+
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"]
+{
+    background: #f2ece1;
+    color: #333;
+}
+    
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4
+{
+    visibility:visible;
+    height:auto;
+    background :#f2ece1;
+}
+
+table.TB_COLLAPSE 
+{
+    width:100%;
+    border-collapse:collapse;
+}
+table.TB_COLLAPSE thead th 
+{
+    padding:5px 0px;
+    color:#fff;
+    background-color:#b87070;
+}
+table.TB_COLLAPSE tbody td 
+{
+    padding:5px 0px;
+    color:#555;
+    text-align:center;
+    background-color:#fff;
+    border-bottom:1px solid #915957;
+}
+
+img {
+    width:200px;
+    height:150px;
+}
+
+tr {
+    background:#fff;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+legend
+{
+    font-size:20px;
+    font-weight:bold;
+    background :#b87070;
+    border: solid 0px #333;
+    color: #fff;
+    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+fieldset
+{
+    width:435px;
+    background :#fff;
+}
+
+body
+{
+    margin:0;
+}
+
+p.line
+{
+    border: solid 1px #b87070;
+}
